@@ -53,6 +53,15 @@ const About = () => {
   };
 
   const onIncreaseMode = () => {
+
+    // console.log(typeof("1")) // string
+    // console.log(typeof(1)) // number 
+    // console.log(typeof("1"+1)) // string
+    // console.log("1"+1) //11
+
+    // console.log(mode);  // 1 이지만 , 타입검사를 하면 1은  string( 문자) 이다. 그래서 하단에 parseInt로 숫자로 바꾸고 +1 연산공식을 세운다. 
+    // console.log(typeof(mode)); // string
+
     const nextMode = mode === null ? 1 : parseInt(mode) + 1;
     setSearchParams({ mode: nextMode, detail });
   };
