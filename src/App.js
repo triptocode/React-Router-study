@@ -16,7 +16,7 @@ const App = () => {
       // </div>s
 
   <div>
-    2. a태그와 Link 비교 : 새로고침 유무
+    {/* 2. a태그와 Link 비교 : 새로고침 유무 */}
     {/* <hr />
       <a href ="/about"> 이동</a> */}
     <hr />

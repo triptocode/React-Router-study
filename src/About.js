@@ -27,7 +27,7 @@
 //     <div>
 //       <h1> About  </h1>
 //       <p> 이 사이트는 리액트 라우터를  실습 해보는 예제 프로젝트를 다룹니다</p>
-//       <p>쿼리스트링: {location.search}</p>
+//       <p>쿼리스트링 search: {location.search}</p>
 //     </div>
 //   );
 // };
@@ -35,10 +35,11 @@
 // export default About;
 
 
-
+// 쿼리 예제2 - 물음표 지우고 파싱하기
+// http://localhost:3000/about?detail=true&mode=1 
 // ? 물음표를 지우고, & 문자열로 분리한뒤 key 와 value 를 파싱하는 작업을
 // 리액트라우터v6부터 useSearchParams 라는 Hook을 통해 가능해졌다
-// 쿼리 예제2 - 물음표 지우고 파싱하기
+
 
 import { useSearchParams } from 'react-router-dom';
 
