@@ -32,7 +32,9 @@ const App = () => {
 
 {/* 1. <Routes>를 활용하여 url 경로와 렌더링해줄 컴포넌트를 연결한다.  */}
       <Routes> 
-        <Route path="/" element={<Home />} />
+      <Route index element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        
         <Route path="/about" element={<About />} />
         <Route path="/profiles/:username" element={<Profile />} />
       </Routes>
